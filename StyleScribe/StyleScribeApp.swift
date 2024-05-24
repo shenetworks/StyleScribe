@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct StyleScribeApp: App {
+    @StateObject private var userSelection = UserSelection()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SelectionView()
+                .environmentObject(userSelection)
+                .modelContainer(for: BrandList.self)
         }
     }
 }

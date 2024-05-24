@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var userSelection = UserSelection()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("Boilerplate")
     }
 }
+
 
 #Preview {
     ContentView()
