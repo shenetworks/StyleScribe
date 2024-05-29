@@ -38,61 +38,73 @@ struct SelectionView: View {
                             step = .sweater
                         }
                     }
+                    .navigationTitle("Category")
                 case .neckline:
                     LazyGridView(items: necklines) { neckline in
                         userSelection.neckline = neckline
                         step = .sleeve
                     }
+                    .navigationTitle("Neckline")
                 case .dresses:
                     LazyGridView(items: dresses) { dress in
                         userSelection.dress = dress
                         step = .pattern
                     }
+                    .navigationTitle("Dress")
                 case .pants:
                     LazyGridView(items: pants) { pant in
                         userSelection.pant = pant
                         step = .rise
                     }
+                    .navigationTitle("Pants")
                 case .rise:
                     LazyGridView(items: rise) { rise in
                         userSelection.rise = rise
                         step = .pattern
                     }
+                    .navigationTitle("Rise")
                 case .sleeve:
                     LazyGridView(items: sleeve) { sleeve in
                         userSelection.sleeve = sleeve
                         step = .pattern
                     }
+                    .navigationTitle("Sleeve")
                 case .short:
                     LazyGridView(items: short) { short in
                         userSelection.short = short
                         step = .rise
                     }
+                    .navigationTitle("Shorts")
                 case .jacket:
                     LazyGridView(items: jacket) { jacket in
                         userSelection.jacket = jacket
                         step = .pattern
                     }
+                    .navigationTitle("Jacket")
                 case .skirt:
                     LazyGridView(items: skirt) { skirt in
                         userSelection.skirt = skirt
                         step = .skirtLength
                     }
+                    .navigationTitle("Skirt")
                 case .skirtLength:
                     LazyGridView(items: skirtLength) { length in
                         userSelection.skirtLength = length
                         step = .pattern
                     }
+                    .navigationTitle("Skirt Length")
                 case .sweater:
                     LazyGridView(items: sweater) { sweater in
                         userSelection.sweater = sweater
                         step = .neckline
                     }
+                    .navigationTitle("Sweater")
                 case .pattern:
                     LazyGridView(items: pattern) { pattern in
                         userSelection.pattern = pattern
                         step = .material
                     }
+                    .navigationTitle("Pattern")
                 case .material:
                     MaterialView(step: $step)
                 
