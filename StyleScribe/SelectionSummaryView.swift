@@ -58,6 +58,7 @@ struct SelectionSummaryView: View {
         userSelection.jacket = nil
         userSelection.short = nil
         userSelection.pattern = nil
+        userSelection.sleeve = nil
         userSelection.materials.removeAll()
         
 

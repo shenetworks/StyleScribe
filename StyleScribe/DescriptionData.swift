@@ -145,20 +145,20 @@ struct Pants: Displayable {
 }
 
 let pants: [Pants] = [
-    Pants(name: "Stright", imageName: "unavailable"),
-    Pants(name: "Skinny", imageName: "unavailable"),
-    Pants(name: "Bootcut", imageName: "unavailable"),
-    Pants(name: "Flare", imageName: "unavailable"),
-    Pants(name: "Wide Leg", imageName: "unavailable"),
-    Pants(name: "Stirrup", imageName: "unavailable"),
-    Pants(name: "Cargo", imageName: "unavailable"),
-    Pants(name: "Sailor", imageName: "unavailable"),
+    Pants(name: "Stright Leg Pants", imageName: "unavailable"),
+    Pants(name: "Skinny Leg Pants", imageName: "unavailable"),
+    Pants(name: "Bootcut Pants", imageName: "unavailable"),
+    Pants(name: "Flare Pants", imageName: "unavailable"),
+    Pants(name: "Wide Leg Pants", imageName: "unavailable"),
+    Pants(name: "Stirrup Pants", imageName: "unavailable"),
+    Pants(name: "Cargo Pants", imageName: "unavailable"),
+    Pants(name: "Sailor Pants", imageName: "unavailable"),
     Pants(name: "Joggers", imageName: "unavailable"),
-    Pants(name: "High Cuff", imageName: "unavailable"),
-    Pants(name: "Cuffed", imageName: "unavailable"),
+    Pants(name: "High Cuff Pants", imageName: "unavailable"),
+    Pants(name: "Cuffed Pants", imageName: "unavailable"),
     Pants(name: "Leggings", imageName: "unavailable"),
-    Pants(name: "Barrel", imageName: "unavailable"),
-    Pants(name: "Boyfriend", imageName: "unavailable")
+    Pants(name: "Barrel Leg Pants", imageName: "unavailable"),
+    Pants(name: "Boyfriend Pants", imageName: "unavailable")
 ]
 
 struct Rise: Displayable {
