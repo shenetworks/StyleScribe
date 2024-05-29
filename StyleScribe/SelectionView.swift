@@ -23,7 +23,7 @@ struct SelectionView: View {
                     LazyGridView(items: category) { category in
                         userSelection.category = category
                         if category.name == "Tops" {
-                            step = .neckline
+                            step = .shirt
                         } else if category.name == "Dresses" {
                             step = .dresses
                         } else if category.name == "Pants" {
@@ -39,6 +39,12 @@ struct SelectionView: View {
                         }
                     }
                     .navigationTitle("Category")
+                case .shirt:
+                    LazyGridView(items: shirt) { shirt in
+                        userSelection.shirt = shirt
+                        step = .neckline
+                    }
+                    .navigationTitle("Tops")
                 case .neckline:
                     LazyGridView(items: necklines) { neckline in
                         userSelection.neckline = neckline
@@ -129,5 +135,5 @@ struct SelectionView: View {
 }
 
 enum SelectionStep {
-    case category, neckline, dresses, pants, rise, sleeve, short, jacket, skirt, skirtLength, sweater, pattern, material, brand, details, summary
+    case category, shirt, neckline, dresses, pants, rise, sleeve, short, jacket, skirt, skirtLength, sweater, pattern, material, brand, details, summary
 }
