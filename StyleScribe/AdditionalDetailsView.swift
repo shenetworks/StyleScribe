@@ -29,19 +29,19 @@ struct AdditionalDetailsView: View {
                         }
                     }
                     .pickerStyle(.menu)
-                    .onChange(of: selectedFlaw) {
-                        if (selectedFlaw == nil) == (userSelection.flaw != nil) {
-                            userSelection.flaw = selectedFlaw
+                    .onChange(of: selectedFlaw, initial: true) { oldValue, newValue in
+                        if newValue != oldValue {
+                            userSelection.flaw = newValue
+                            
+                            
                         }
                     }
+
                 }
                 Section("Color") {
                     ColorPickerView()
                 }
             }
-        }
-        .background {
-            Color.secondary
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
