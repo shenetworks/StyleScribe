@@ -16,11 +16,21 @@ struct ColorPickerView: View {
     
     var body: some View {
         VStack {
+            if let selectedColor = userSelection.color {
+                Text("\(selectedColor.name)")
+                    .font(.title)
+                    .foregroundStyle(selectedColor.color)
+                
+            } else {
+                Text("Select a color")
+                    .font(.title)
+            }
+            
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(colors) { item in
                     Circle()
                         .fill(item.color)
-                        .frame(width: 50, height: 50)
+                        .aspectRatio(contentMode: .fit)
                         .onTapGesture {
                             userSelection.color = item
                         }
@@ -30,18 +40,25 @@ struct ColorPickerView: View {
                         )
                 }
             }
+            .padding(1)
             
-            if let selectedColor = userSelection.color {
-                Text("\(selectedColor.name)")
-                    .foregroundStyle(selectedColor.color)
-                    .font(.headline)
-            } else {
-                Text("Select a color")
-            }
         }
+        .padding()
+        .background {
+            Color.white
+                .opacity(20.0)
+                .cornerRadius(20)
+                
+            
+        }
+        .padding()
+   
     }
 }
 
-#Preview {
-    ColorPickerView()
+struct ColorPickerView_Previews: PreviewProvider {
+    static var previews: some View {
+        ColorPickerView()
+            .environmentObject(UserSelection())
+    }
 }

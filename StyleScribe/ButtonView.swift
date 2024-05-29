@@ -11,20 +11,29 @@ struct ButtonView<Item: Displayable>: View {
     var item: Item
     
     var body: some View {
-        VStack(spacing: 0) {
+        ZStack(alignment: .bottom) {
             item.image
                 .resizable()
                 .scaledToFit()
-                .frame(width: 100, height: 100)
-                .clipShape(Rectangle())
+                .aspectRatio(contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
             Text(item.name)
                 .font(.caption)
+                .lineLimit(1)
+                .padding(.horizontal, 30)
+                .padding(.vertical, 5)
+                .background(.ultraThickMaterial)
+                .foregroundStyle(.black)
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .padding(4)
+            
 
                 
         }
-        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 120)
-        .background(Color(.systemGray6))
+        .frame(width: 150, height: 150)
+        .background(Color(.white))
         .cornerRadius(8)
+        .padding()
 
     }
 }

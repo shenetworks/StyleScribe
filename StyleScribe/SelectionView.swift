@@ -95,6 +95,10 @@ struct SelectionView: View {
                     }
                 case .material:
                     MaterialView(step: $step)
+                
+                case .brand:
+                    BrandPickerView(step: $step)
+                        .navigationTitle("Brand")
                         
                 case .details:
                     AdditionalDetailsView(step: $step)
@@ -113,5 +117,5 @@ struct SelectionView: View {
 }
 
 enum SelectionStep {
-    case category, neckline, dresses, pants, rise, sleeve, short, jacket, skirt, skirtLength, sweater, pattern, material, details, summary
+    case category, neckline, dresses, pants, rise, sleeve, short, jacket, skirt, skirtLength, sweater, pattern, material, brand, details, summary
 }

@@ -61,7 +61,7 @@ struct SelectionSummaryView: View {
             if let flaw = userSelection.flaw {
                 Text("Flaw: \(flaw.name)")
             }
-            if !userSelection.materials.isEmpty {
+            if !userSelection.materials.isEmpty { //broken
                 Text("Materials:")
                     .font(.headline)
                 ForEach(userSelection.materials) { MaterialSelection in

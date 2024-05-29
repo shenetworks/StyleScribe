@@ -29,7 +29,6 @@ struct MaterialView: View {
                     }
                     Spacer()
                     if isSelected(material: material) {
-                        Text("%")
                         TextField("1-100", value: Binding(
                             get: { inputValues[material.name, default: 0] },
                             set: { newValue in inputValues[material.name] = newValue
@@ -39,6 +38,8 @@ struct MaterialView: View {
                         .keyboardType(.numberPad)
                         .frame(width: 50)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                        Text("%")
                     }
                 }
             }
@@ -46,7 +47,7 @@ struct MaterialView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        step = .details
+                        step = .brand
                     }) {
                         Text("Next")
                             .font(.headline)

@@ -39,6 +39,7 @@
 		36BFBA632BFE5F5F007D4770 /* AdditionalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFBA622BFE5F5F007D4770 /* AdditionalDetailsView.swift */; };
 		36BFBA652BFE60AA007D4770 /* BrandList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFBA642BFE60AA007D4770 /* BrandList.swift */; };
 		36BFBA672BFFA272007D4770 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFBA662BFFA272007D4770 /* ColorPickerView.swift */; };
+		36BFBA6B2C07831A007D4770 /* BrandPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFBA6A2C07831A007D4770 /* BrandPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		36BFBA622BFE5F5F007D4770 /* AdditionalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalDetailsView.swift; sourceTree = "<group>"; };
 		36BFBA642BFE60AA007D4770 /* BrandList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandList.swift; sourceTree = "<group>"; };
 		36BFBA662BFFA272007D4770 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		36BFBA6A2C07831A007D4770 /* BrandPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				36BFBA5E2BFD4486007D4770 /* SelectionSummaryView.swift */,
 				36BFBA5A2BFD1C29007D4770 /* LazyGridView.swift */,
 				36BFBA2F2BFD0F2A007D4770 /* ButtonView.swift */,
+				36BFBA6A2C07831A007D4770 /* BrandPickerView.swift */,
 				36BFBA622BFE5F5F007D4770 /* AdditionalDetailsView.swift */,
 				36BFBA662BFFA272007D4770 /* ColorPickerView.swift */,
 				36BFBA0A2BFCEBB4007D4770 /* Assets.xcassets */,
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BFBA6B2C07831A007D4770 /* BrandPickerView.swift in Sources */,
 				36BFBA5F2BFD4486007D4770 /* SelectionSummaryView.swift in Sources */,
 				36BFBA152BFCEBF1007D4770 /* DescriptionData.swift in Sources */,
 				36BFBA092BFCEBB3007D4770 /* ContentView.swift in Sources */,
