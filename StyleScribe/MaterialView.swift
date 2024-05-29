@@ -58,15 +58,15 @@ struct MaterialView: View {
         }
     }
     private func toggleMaterialSelection(_ material: Materials) {
-        if let index = selectedMaterials.firstIndex(where: {$0.material.id == material.id}) {
-            selectedMaterials.remove(at: index)
+        if let index = userSelection.materials.firstIndex(where: {$0.material.id == material.id}) {
+            userSelection.materials.remove(at: index)
         } else {
-            selectedMaterials.append(MaterialSelection(material: material, inputValue: 0))
+            userSelection.materials.append(MaterialSelection(material: material, inputValue: inputValues[material.name, default: 0]))
         }
     }
     
     private func isSelected(material: Materials) -> Bool {
-        selectedMaterials.contains { $0.material.id == material.id}
+        userSelection.materials.contains { $0.material.id == material.id}
     }
     
     private func updateMaterialInputValue(_ material: Materials, newValue: Int) {

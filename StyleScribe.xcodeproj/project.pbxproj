@@ -40,6 +40,8 @@
 		36BFBA652BFE60AA007D4770 /* BrandList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFBA642BFE60AA007D4770 /* BrandList.swift */; };
 		36BFBA672BFFA272007D4770 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFBA662BFFA272007D4770 /* ColorPickerView.swift */; };
 		36BFBA6B2C07831A007D4770 /* BrandPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFBA6A2C07831A007D4770 /* BrandPickerView.swift */; };
+		36BFBA712C07B655007D4770 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFBA702C07B655007D4770 /* TitleView.swift */; };
+		36BFBA732C07C2A4007D4770 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFBA722C07C2A4007D4770 /* DescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		36BFBA642BFE60AA007D4770 /* BrandList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandList.swift; sourceTree = "<group>"; };
 		36BFBA662BFFA272007D4770 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		36BFBA6A2C07831A007D4770 /* BrandPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandPickerView.swift; sourceTree = "<group>"; };
+		36BFBA702C07B655007D4770 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		36BFBA722C07C2A4007D4770 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,15 +122,17 @@
 			isa = PBXGroup;
 			children = (
 				36BFBA062BFCEBB3007D4770 /* StyleScribeApp.swift */,
+				36BFBA5C2BFD358B007D4770 /* SelectionView.swift */,
 				36BFBA602BFE4E82007D4770 /* MaterialView.swift */,
 				36BFBA082BFCEBB3007D4770 /* ContentView.swift */,
-				36BFBA5C2BFD358B007D4770 /* SelectionView.swift */,
-				36BFBA5E2BFD4486007D4770 /* SelectionSummaryView.swift */,
 				36BFBA5A2BFD1C29007D4770 /* LazyGridView.swift */,
 				36BFBA2F2BFD0F2A007D4770 /* ButtonView.swift */,
 				36BFBA6A2C07831A007D4770 /* BrandPickerView.swift */,
 				36BFBA622BFE5F5F007D4770 /* AdditionalDetailsView.swift */,
 				36BFBA662BFFA272007D4770 /* ColorPickerView.swift */,
+				36BFBA702C07B655007D4770 /* TitleView.swift */,
+				36BFBA722C07C2A4007D4770 /* DescriptionView.swift */,
+				36BFBA5E2BFD4486007D4770 /* SelectionSummaryView.swift */,
 				36BFBA0A2BFCEBB4007D4770 /* Assets.xcassets */,
 				36BFBA502BFD1433007D4770 /* ClothingCategories */,
 				36BFBA222BFD064F007D4770 /* necklines */,
@@ -284,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36BFBA6B2C07831A007D4770 /* BrandPickerView.swift in Sources */,
+				36BFBA732C07C2A4007D4770 /* DescriptionView.swift in Sources */,
 				36BFBA5F2BFD4486007D4770 /* SelectionSummaryView.swift in Sources */,
 				36BFBA152BFCEBF1007D4770 /* DescriptionData.swift in Sources */,
 				36BFBA092BFCEBB3007D4770 /* ContentView.swift in Sources */,
@@ -294,6 +301,7 @@
 				36BFBA672BFFA272007D4770 /* ColorPickerView.swift in Sources */,
 				36BFBA5D2BFD358B007D4770 /* SelectionView.swift in Sources */,
 				36BFBA632BFE5F5F007D4770 /* AdditionalDetailsView.swift in Sources */,
+				36BFBA712C07B655007D4770 /* TitleView.swift in Sources */,
 				36BFBA612BFE4E82007D4770 /* MaterialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

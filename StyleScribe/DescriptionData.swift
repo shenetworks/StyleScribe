@@ -84,17 +84,17 @@ struct Necklines: Displayable {
 
 let necklines: [Necklines] = [
     Necklines(name: "V Neck", imageName: "vNeck"),
-    Necklines(name: "Turtle", imageName: "turtle"),
-    Necklines(name: "Sweetheart", imageName: "sweetheart"),
-    Necklines(name: "Square", imageName: "square"),
-    Necklines(name: "Semi Sweetheart", imageName: "semiSweetheart"),
-    Necklines(name: "Scoop", imageName: "scoop"),
-    Necklines(name: "Queen Anne", imageName: "QueenAnne"),
-    Necklines(name: "Key Hole", imageName: "keyHole"),
-    Necklines(name: "Illusion", imageName: "illusion"),
+    Necklines(name: "Turtle Neck", imageName: "turtle"),
+    Necklines(name: "Sweetheart Neck", imageName: "sweetheart"),
+    Necklines(name: "Square Neck", imageName: "square"),
+    Necklines(name: "Semi Sweetheart Neck", imageName: "semiSweetheart"),
+    Necklines(name: "Scoop Neck", imageName: "scoop"),
+    Necklines(name: "Queen Anne Neck", imageName: "QueenAnne"),
+    Necklines(name: "Key Hole Neck", imageName: "keyHole"),
+    Necklines(name: "Illusion Neck", imageName: "illusion"),
     Necklines(name: "Crew Neck", imageName: "crewNeck"),
-    Necklines(name: "Boat", imageName: "boat"),
-    Necklines(name: "Asymmetric", imageName: "Asymmetric"),
+    Necklines(name: "Boat Neck", imageName: "boat"),
+    Necklines(name: "Asymmetric Neck", imageName: "Asymmetric"),
 ]
 
 struct Sleeves: Displayable {
@@ -105,17 +105,17 @@ struct Sleeves: Displayable {
 
 let sleeve: [Sleeves] = [
     Sleeves(name: "Sleeveless", imageName: "unavailable"),
-    Sleeves(name: "Cap", imageName: "unavailable"),
-    Sleeves(name: "Short", imageName: "unavailable"),
-    Sleeves(name: "3/4 Length", imageName: "unavailable"),
-    Sleeves(name: "Long", imageName: "unavailable"),
-    Sleeves(name: "Cuffed", imageName: "unavailable"),
-    Sleeves(name: "Bishop", imageName: "unavailable"),
-    Sleeves(name: "Angel", imageName: "unavailable"),
-    Sleeves(name: "Bell", imageName: "unavailable"),
-    Sleeves(name: "Puffed", imageName: "unavailable"),
-    Sleeves(name: "Trumpet", imageName: "unavailable"),
-    Sleeves(name: "Dolman", imageName: "unavailable")
+    Sleeves(name: "Cap Sleeve", imageName: "unavailable"),
+    Sleeves(name: "Short Sleeve", imageName: "unavailable"),
+    Sleeves(name: "3/4 Length Sleeve", imageName: "unavailable"),
+    Sleeves(name: "Long Sleeve", imageName: "unavailable"),
+    Sleeves(name: "Cuffed Sleeve", imageName: "unavailable"),
+    Sleeves(name: "Bishop Sleeve", imageName: "unavailable"),
+    Sleeves(name: "Angel Sleeve", imageName: "unavailable"),
+    Sleeves(name: "Bell Sleeve", imageName: "unavailable"),
+    Sleeves(name: "Puffed Sleeve", imageName: "unavailable"),
+    Sleeves(name: "Trumpet Sleeve", imageName: "unavailable"),
+    Sleeves(name: "Dolman Sleeve", imageName: "unavailable")
 ]
 
 struct Dresses: Displayable {
